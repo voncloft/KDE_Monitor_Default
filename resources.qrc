@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/monitor.svg</file>
+    </qresource>
+</RCC>

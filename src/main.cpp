@@ -1,6 +1,7 @@
 #include <QApplication>
 #include <QGuiApplication>
 #include <QHeaderView>
+#include <QIcon>
 #include <QLabel>
 #include <QProcess>
 #include <QPushButton>
@@ -208,8 +209,11 @@ private:
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
+    const QIcon appIcon(QStringLiteral(":/assets/monitor.svg"));
+    app.setWindowIcon(appIcon);
 
     MonitorWindow window;
+    window.setWindowIcon(appIcon);
     window.show();
 
     return app.exec();

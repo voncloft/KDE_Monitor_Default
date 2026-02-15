@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Homescreen Monitor
+Comment=Primary monitor selector
+Exec=sh -c 'cd "$(dirname "$1")" && if [ -x ./build/kde-primary-monitor ]; then exec ./build/kde-primary-monitor; elif [ -x ./kde-primary-monitor ]; then exec ./kde-primary-monitor; else exec kde-primary-monitor; fi' dummy %k
+Icon=homescreen-monitor
+Terminal=false
+Categories=Utility;
+StartupNotify=true
